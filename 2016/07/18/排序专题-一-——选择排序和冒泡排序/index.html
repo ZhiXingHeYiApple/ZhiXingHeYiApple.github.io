@@ -1,0 +1,942 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="McCOUWiTKg" />
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Algorithm,Sort," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ZhiXingHeYi" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="把事情做好,常常是浪费时间!&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——罗伯特·伯恩
+剪不断，理还乱，是离愁，别是一番滋味在心头。&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——李清照
+
+
+现实世界中，纷繁凌乱的表象常常掩盖事物的规律和本质。为了去掉这层表象，我们不得不对事物重新组织，让其变的有序。在探索的过程中，人们开发出了几十种排序算法，广泛应用于人们的生活和生产实践中。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="排序专题(一)——选择排序与冒泡排序">
+<meta property="og:url" content="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/index.html">
+<meta property="og:site_name" content="ZhiXingHeYi">
+<meta property="og:description" content="把事情做好,常常是浪费时间!&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——罗伯特·伯恩
+剪不断，理还乱，是离愁，别是一番滋味在心头。&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——李清照
+
+
+现实世界中，纷繁凌乱的表象常常掩盖事物的规律和本质。为了去掉这层表象，我们不得不对事物重新组织，让其变的有序。在探索的过程中，人们开发出了几十种排序算法，广泛应用于人们的生活和生产实践中。">
+<meta property="og:image" content="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/sort_algorithm01.png">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2016/05/296.gif">
+<meta property="og:image" content="http://www.36dsj.com/wp-content/uploads/2016/05/297.gif">
+<meta property="og:updated_time" content="2016-07-19T13:05:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="排序专题(一)——选择排序与冒泡排序">
+<meta name="twitter:description" content="把事情做好,常常是浪费时间!&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——罗伯特·伯恩
+剪不断，理还乱，是离愁，别是一番滋味在心头。&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——李清照
+
+
+现实世界中，纷繁凌乱的表象常常掩盖事物的规律和本质。为了去掉这层表象，我们不得不对事物重新组织，让其变的有序。在探索的过程中，人们开发出了几十种排序算法，广泛应用于人们的生活和生产实践中。">
+<meta name="twitter:image" content="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/sort_algorithm01.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/"/>
+
+  <title> 排序专题(一)——选择排序与冒泡排序 | ZhiXingHeYi </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?d0473e59a1ae9e1da7064f3f72ac8182";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ZhiXingHeYi</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                排序专题(一)——选择排序与冒泡排序
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-18T14:22:45+08:00" content="2016-07-18">
+              2016-07-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/传统算法/" itemprop="url" rel="index">
+                    <span itemprop="name">传统算法</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/传统算法/排序专题/" itemprop="url" rel="index">
+                    <span itemprop="name">排序专题</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/18/排序专题-一-——选择排序和冒泡排序/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/18/排序专题-一-——选择排序和冒泡排序/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/07/18/排序专题-一-——选择排序和冒泡排序/" class="leancloud_visitors" data-flag-title="排序专题(一)——选择排序与冒泡排序">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p><strong>把事情做好,常常是浪费时间!&emsp; &emsp;&emsp; &emsp;——罗伯特·伯恩</strong></p>
+<p><strong>剪不断，理还乱，是离愁，别是一番滋味在心头。&emsp; &emsp;&emsp; &emsp;——李清照</strong></p>
+</blockquote>
+<img src="/2016/07/18/排序专题-一-——选择排序和冒泡排序/sort_algorithm01.png" alt="sort_algorithm01.png" title="">
+<p>现实世界中，纷繁凌乱的表象常常掩盖事物的规律和本质。为了去掉这层表象，我们不得不对事物重新组织，让其变的有序。在探索的过程中，人们开发出了几十种排序算法，广泛应用于人们的生活和生产实践中。大家过去或多或少都接触或了解过其中的一些算法，如果是这样，请你暂时忘记它们，以初学者的姿态问自己一个问题：“在只看结果，不考虑其他约束的情况下，解决排序问题最直接了当的方法是什么？” 对于这个问题的答案恐怕是智者见智，仁者见仁。也许你并不同意我的观点，但选择排序和冒泡排序绝对是两个有力的候选者。</p>
+<hr>
+<h2 id="蛮力法"><a href="#蛮力法" class="headerlink" title="蛮力法"></a>蛮力法</h2><p>蛮力法，经常又被称呼为穷举法或暴力拆解法。是一种简单直接地解决问题的方法，常直接基于问题的描述和所涉及的概念定义。<br>尽管“巧妙”与“高效”这两个高大上的词汇与“蛮力法”这个穷屌丝往往搭不上边。但是我们不应该忽略这个穷屌丝（屌丝也有完美逆袭的一天）的存在，其作为一种重要的算法设计策略的地位是无法撼动的，理由如下：</p>
+<ul>
+<li><strong>对于解决的问题类型更具一般性和普适性。</strong></li>
+<li><strong>虽然效率低，但仍可以解决一些小规模的问题实例。</strong></li>
+<li><strong>当要解决的问题实例不多或解空间较小时，蛮力法仍可以用能够接受的速度对问题进行求解，而寻找和设计一个更高效算法所花费的代价可能是不值得的。</strong></li>
+<li><strong>蛮力法经常被其他一些“高富帅”的算法作为参照标杆。</strong></li>
+</ul>
+<p>个人认为在排序算法中，选择排序和冒泡排序俨然就是蛮力法的最佳代言人。这也正是我为什么会选择这两个排序算法作为讲解排序专题的切入点。<br><a id="more"></a></p>
+<hr>
+<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><p><strong>特性</strong>：<font color="red">In-place sort</font>（无需额外辅助空间），<font color="red">unstable sort</font>（非稳定）。<br><img class="aligncenter size-full wp-image-51206" src="http://www.36dsj.com/wp-content/uploads/2016/05/296.gif" alt="选择排序" width="288" height="288" data-tag="bdshare" data-bd-imgshare-binded="1"></p>
+<p><strong>算法步骤</strong>：<br>1）首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置</p>
+<p>2）再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。</p>
+<p>3）重复第二步，直到所有元素均排序完毕。</p>
+<p>举例(红色标记的数为每轮迭代找到的最小数)<br><strong><font color="blue">|</font></strong>  &emsp;89&emsp;&emsp;46&emsp;&emsp;67&emsp;&emsp;92&emsp;&emsp;29&emsp;&emsp;34&emsp;&emsp;<strong><font color="red">17</font></strong></p>
+<p> &emsp;&emsp;17<strong><font color="blue">|</font></strong> &emsp;46&emsp;&emsp;67&emsp;&emsp;92&emsp;&emsp;<strong><font color="red">29</font></strong>&emsp;&emsp;34&emsp;&emsp;89</p>
+<p> &emsp;&emsp;17&emsp;&emsp;29<strong><font color="blue">|</font></strong> &emsp;67&emsp;&emsp;92&emsp;&emsp;46&emsp;&emsp;<strong><font color="red">34</font></strong>&emsp;&emsp;89</p>
+<p> &emsp;&emsp;17&emsp;&emsp;29&emsp;&emsp;34<strong><font color="blue">|</font></strong> &emsp;92&emsp;&emsp;<strong><font color="red">46</font></strong>&emsp;&emsp;67&emsp;&emsp;89</p>
+<p> &emsp;&emsp;17&emsp;&emsp;29&emsp;&emsp;34&emsp;&emsp;46<strong><font color="blue">|</font></strong> &emsp;&emsp;92&emsp;&emsp;<strong><font color="red">67</font></strong>&emsp;&emsp;89</p>
+<p> &emsp;&emsp;17&emsp;&emsp;29&emsp;&emsp;34&emsp;&emsp;46&emsp;&emsp;67<strong><font color="blue">|</font></strong> &emsp;92&emsp;&emsp;<strong><font color="red">89</font></strong></p>
+<p> &emsp;&emsp;17&emsp;&emsp;29&emsp;&emsp;34&emsp;&emsp;46&emsp;&emsp;67&emsp;&emsp;89&emsp;&emsp;92</p>
+<figure class="highlight cpp"><figcaption><span>伪代码</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">SelectionSort(A[<span class="number">0.</span>.n<span class="number">-1</span>])</div><div class="line">  <span class="comment">//功能：用选择排序对给定的数组进行排序</span></div><div class="line">  <span class="comment">//输入：一个可排序数组A[0..n-1]</span></div><div class="line">  <span class="comment">//输出：升序排列的数组A[0..n-1]</span></div><div class="line">  <span class="keyword">for</span> i&lt;- <span class="number">0</span> to n<span class="number">-2</span> <span class="keyword">do</span></div><div class="line">    min&lt;- i</div><div class="line">    <span class="keyword">for</span> j&lt;- i+<span class="number">1</span> to n<span class="number">-1</span> <span class="keyword">do</span></div><div class="line">      <span class="keyword">if</span> A[j] &lt; A[min] then min&lt;- j</div><div class="line">    swap A[i] and A[min]</div></pre></td></tr></table></figure>
+<p>注：最外层循环只需要进行n-1轮迭代。显而易见，n-1轮迭代后A[1…n-1]包含了A中最小的i-1个元素，且已排序，因此A[n]中的元素是最大的，因此A[1…n]已排序。<br><strong>算法复杂度</strong>：<br>时间复杂度：<br>在选择排序算法中的基本操作是比较操作<code>A[j] &lt; A[min]</code>，其执行次数仅仅取决于数组的规模,并不依赖于特定的输入。所以其时间复杂度始终为<strong>$$O(n^2)$$</strong><br>空间复杂度：<strong>$$O(1)$$</strong><br>选择排序算法键的的交换次数为<code><font color="red">n-1</font></code>次（每轮迭代执行一次交换），这个特性使得选择排序优于其它许多时间复杂度也是O(n^2)的排序算法。</p>
+<hr>
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p><strong>特性</strong>：<font color="red">In-place sort</font>、<font color="red">stable sort</font></p>
+<p><img class="aligncenter size-full wp-image-51207" src="http://www.36dsj.com/wp-content/uploads/2016/05/297.gif" alt="冒泡排序" width="280" height="237" data-tag="bdshare" data-bd-imgshare-binded="1"></p>
+<p>冒泡排序（Bubble Sort）也是一种简单直观的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。之所以叫冒泡排序，是因为在相邻元素不断两两交换的过程中，较小的元素会慢慢浮到数列的前端，而每轮迭代，都会将所有未排序元素中最大的元素会沉到数列的尾部，这一过程非常类似于水中的气泡。</p>
+<p><strong>算法步骤</strong>：</p>
+<p>1）比较相邻的元素。如果需要调整，就交换它们。</p>
+<p>2）对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。</p>
+<p>3）针对所有的元素重复以上的步骤，<font color="red">除了最后一个</font>。</p>
+<p>4）持续每次对越来越少的元素重复上面的步骤，<font color="red">直到没有任何一对数字需要比较</font>。</p>
+<figure class="highlight cpp"><figcaption><span>伪代码</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">BubbleSort(A[<span class="number">0.</span>.n<span class="number">-1</span>])</div><div class="line">  <span class="comment">//功能：用冒泡排序对给定的数组进行排序</span></div><div class="line">  <span class="comment">//输入：一个可排序数组A[0..n-1]</span></div><div class="line">  <span class="comment">//输出：升序排列的数组A[0..n-1]</span></div><div class="line">	<span class="keyword">for</span> i&lt;- n<span class="number">-2</span> downto <span class="number">0</span> <span class="keyword">do</span></div><div class="line">	  <span class="keyword">for</span> j&lt;- <span class="number">0</span> to i <span class="keyword">do</span></div><div class="line">	    <span class="keyword">if</span> A[j]&gt;A[j+<span class="number">1</span>]</div><div class="line">		   then swap A[j] and A[j+<span class="number">1</span>]</div></pre></td></tr></table></figure>
+<p><strong>算法复杂度</strong>：<br>时间复杂度：<br>未改进版本的冒泡排序键值比较次数对于任何输入规模为n的数组都是相同的，但键的交换次数却取决于特定的输入数组。最坏情况下，遇到降序的数组，交换次数与键值比较次数相同。因此我们应该把键值比较作为冒泡排序的基本操作。算法复杂度为<strong>$$O(n^2)$$</strong><br>空间复杂度：<br>和选择排序一样，冒泡排序也不需要额外的辅助空间，其空间复杂度为<strong>$$O(1)$$</strong></p>
+<h3 id="冒泡排序法的改进"><a href="#冒泡排序法的改进" class="headerlink" title="冒泡排序法的改进"></a>冒泡排序法的改进</h3><p>在应用蛮力法时常常会遇到这种情况，即经过适度的努力后，我们能够对算法的第一个版本进行一定的改良。让我们回顾前面讲过的选择排序和冒泡排序，分析伪代码，你会发现这两个算法的实现都需要两层循环嵌套，而且它们在每轮迭代中都是彼此独立的，正如一个头脑简单，空有蛮力的人一个劲儿地往终点冲刺，而忽略了沿途的风景，同时也忽略了捷径。简单的冒泡排序正是犯了这样的错误，而没有充分激发出自己的潜能。具体来说吧！在冒泡排序过程中，在某轮迭代中，如果对列表比较一遍后发现没有进行元素交换时，说明列表已经是有序的了，可以终止这个算法了。<br>具体的方式主要有3种（尽管都大同小异，本质上就一个策略,及时终止,不做无用功）。</p>
+<p>(1). 加一个标志位flag，当某一趟冒泡排序没有元素交换时，则冒泡结束，元素已经有序，可以有效的减少冒泡次数。</p>
+<figure class="highlight cpp"><figcaption><span>伪代码</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">BubbleSort(A[<span class="number">0.</span>.n<span class="number">-1</span>])</div><div class="line">  <span class="comment">//功能：用改进冒泡排序对给定的数组进行排序</span></div><div class="line">  <span class="comment">//输入：一个可排序数组A[0..n-1]</span></div><div class="line">  <span class="comment">//输出：升序排列的数组A[0..n-1]</span></div><div class="line">	<span class="keyword">for</span> i&lt;- n<span class="number">-2</span> downto <span class="number">0</span> <span class="keyword">do</span></div><div class="line">	  <span class="keyword">if</span> flag==<span class="literal">false</span> then <span class="keyword">return</span></div><div class="line">	  flag&lt;- <span class="literal">false</span></div><div class="line">	  <span class="keyword">for</span> j&lt;- <span class="number">0</span> to i <span class="keyword">do</span></div><div class="line">	    <span class="keyword">if</span> A[j]&gt;A[j+<span class="number">1</span>]</div><div class="line">		   then swap A[j] and A[j+<span class="number">1</span>]</div><div class="line">		   	flag&lt;- <span class="literal">true</span></div></pre></td></tr></table></figure>
+<p>(2). 保留“犯罪现场”，记录每轮迭代过程中，最后进行交换的元素的下标（<font color="red">该元素之后的所有元素已经是有序的了</font>）。</p>
+<figure class="highlight cpp"><figcaption><span>伪代码</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">BubbleSort(A[<span class="number">0.</span>.n<span class="number">-1</span>])</div><div class="line">  <span class="comment">//功能：用改进的冒泡排序对给定的数组进行排序</span></div><div class="line">  <span class="comment">//输入：一个可排序数组A[0..n-1]</span></div><div class="line">  <span class="comment">//输出：升序排列的数组A[0..n-1]</span></div><div class="line">  lastSwap&lt;- n<span class="number">-2</span></div><div class="line">  <span class="keyword">while</span> lastSwap &gt; <span class="number">0</span> <span class="keyword">do</span></div><div class="line">	  <span class="keyword">for</span> j&lt;- <span class="number">0</span> to lastSwap <span class="keyword">do</span></div><div class="line">	    <span class="keyword">if</span> A[j]&gt;A[j+<span class="number">1</span>]</div><div class="line">		   then swap A[j] and A[j+<span class="number">1</span>]</div><div class="line">		        lastSwap&lt;- j<span class="number">-1</span>   <span class="comment">//记录最后一次交换的位置</span></div></pre></td></tr></table></figure>
+<p>(3). 双向冒泡排序（又称鸡尾酒排序）。该方式从低到高然后从高到低去比较序列里的每个元素。这种方式可以得到比基本冒泡排序稍微好一点的效能（通过分别保存每轮迭代过程，高位置最后一次交换的位置，以及低位置最后一次交换发生的位置）。</p>
+<figure class="highlight cpp"><figcaption><span>伪代码</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">BubbleSort(A[<span class="number">0.</span>.n<span class="number">-1</span>])</div><div class="line">  <span class="comment">//功能：用双向冒泡排序对给定的数组进行排序</span></div><div class="line">  <span class="comment">//输入：一个可排序数组A[0..n-1]</span></div><div class="line">  <span class="comment">//输出：升序排列的数组A[0..n-1]</span></div><div class="line">    up&lt;- n<span class="number">-1</span> low&lt;- <span class="number">0</span></div><div class="line">    <span class="keyword">while</span> low&lt;up <span class="keyword">do</span></div><div class="line">	  <span class="keyword">for</span> i&lt;- low to up<span class="number">-1</span> <span class="keyword">do</span>   <span class="comment">//从低到高扫描</span></div><div class="line">	  	<span class="keyword">if</span> A[i]&gt;A[i+<span class="number">1</span>]</div><div class="line">		  then swap A[i] and A[i+<span class="number">1</span>]</div><div class="line">		       up&lt;- i  <span class="comment">//记录最后一个交换的位置</span></div><div class="line"></div><div class="line">	  <span class="keyword">for</span> i&lt;- up downto low+<span class="number">1</span> <span class="keyword">do</span>  <span class="comment">//从高到低扫描</span></div><div class="line">	  	<span class="keyword">if</span> A[i]&gt;A[i<span class="number">-1</span>]</div><div class="line">		  then swap A[i] and A[i<span class="number">-1</span>]</div><div class="line">		       low&lt;- i   <span class="comment">//记录最后一个交换的位置</span></div></pre></td></tr></table></figure>
+<p>以上的这些改进使得在最好情况下（数组已经有序）复杂度可以降到<strong>O(n)</strong>。虽然对于某些输入，可能运行的比较快，但在最坏情况和平均情况下，这些算法仍然属于<strong>O(n^2)</strong>。实际上，即使在初等排序中，冒泡排序法也不是一个好的选择。如果不是它有一个形象而又容易记住的名字。我们可能不会对它有太多了解。但不管怎样，我们刚刚学到的内容是非常重要的！这两种基本的排序算法常常被调侃为算法界的Hello World！在IT企业的面试环节中，经常被HR拿出来考查你是否具备基本的算法基础，为了不被HR鄙视，你懂的！好好理解和掌握它们吧！</p>
+<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>蛮力法可以快速地得到一个算法，此算法在一些情况下可以通过适度的努力来提升它的性能。</li>
+<li>选择排序和冒泡排序，归结起来就6个字“循环，比较，交换”</li>
+<li>选择排序和冒泡排序<u>都属于内部排序</u>，无需额外存储空间；而<u>冒泡排序是稳定排序，选择排序是不稳定的</u>。</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/path/to/wechat-reward-image.png" alt="Depu Lai WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/path/to/alipay-reward-image.jpg" alt="Depu Lai Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Algorithm/" rel="tag">#Algorithm</a>
+          
+            <a href="/tags/Sort/" rel="tag">#Sort</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/19/如何写伪代码/" rel="prev" title="如何写伪代码">
+                如何写伪代码 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/07/18/排序专题-一-——选择排序和冒泡排序/"
+     data-title="排序专题(一)——选择排序与冒泡排序"
+     data-content=""
+     data-url="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/07/18/排序专题-一-——选择排序和冒泡排序/"
+           data-title="排序专题(一)——选择排序与冒泡排序" data-url="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://pic0.qqmofasi.com/2015/01/10/508_UJjbcabXnFFNBzXl6Fjk_square.jpg"
+               alt="Depu Lai" />
+          <p class="site-author-name" itemprop="name">Depu Lai</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/ZhiXingHeYiApple" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#蛮力法"><span class="nav-number">1.</span> <span class="nav-text">蛮力法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择排序"><span class="nav-number">2.</span> <span class="nav-text">选择排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡排序"><span class="nav-number">3.</span> <span class="nav-text">冒泡排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序法的改进"><span class="nav-number">3.1.</span> <span class="nav-text">冒泡排序法的改进</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Depu Lai</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"comment2016"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("HRCRn6ssmLVHBul2hXrzEtJn-gzGzoHsz", "mSkPI1tNOgNouQUgCeADHQPG");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
