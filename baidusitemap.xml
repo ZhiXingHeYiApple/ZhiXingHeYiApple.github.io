@@ -5,11 +5,61 @@
     
   <url>
     <loc>http://www.depu.online/2016/09/02/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E4%B8%89-%E2%80%94%E2%80%94%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/</loc>
-    <lastmod>2016-09-02T14:58:52.000Z</lastmod>
+    <lastmod>2016-09-02T15:10:30.000Z</lastmod>
     <data>
         <display>
         <title>排序专题(三)——归并排序</title>
         <pubTime>2016-09-02T11:50:09.000Z</pubTime>
+        
+        <tag>Algorithm</tag>
+         
+        <tag>Sort</tag>
+         
+         
+           
+             
+              <breadCrumb title="传统算法" url="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/"/>
+          
+             
+              <breadCrumb title="排序专题" url="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.depu.online/2016/09/02/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E4%BA%8C-%E2%80%94%E2%80%94%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F%E5%92%8C%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2016-09-02T15:10:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>排序专题(二)——插入排序和希尔排序</title>
+        <pubTime>2016-09-02T11:46:40.000Z</pubTime>
+        
+        <tag>Algorithm</tag>
+         
+        <tag>Sort</tag>
+         
+         
+           
+             
+              <breadCrumb title="传统算法" url="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/"/>
+          
+             
+              <breadCrumb title="排序专题" url="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.depu.online/2016/07/18/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E4%B8%80-%E2%80%94%E2%80%94%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F%E5%92%8C%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2016-09-02T15:09:46.000Z</lastmod>
+    <data>
+        <display>
+        <title>排序专题(一)——选择排序与冒泡排序</title>
+        <pubTime>2016-07-18T06:22:45.000Z</pubTime>
         
         <tag>Algorithm</tag>
          
@@ -110,56 +160,6 @@
         <display>
         <title>排序专题(六)——计数排序、桶排序和基数排序</title>
         <pubTime>2016-09-02T11:53:51.000Z</pubTime>
-        
-        <tag>Algorithm</tag>
-         
-        <tag>Sort</tag>
-         
-         
-           
-             
-              <breadCrumb title="传统算法" url="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/"/>
-          
-             
-              <breadCrumb title="排序专题" url="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.depu.online/2016/07/18/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E4%B8%80-%E2%80%94%E2%80%94%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F%E5%92%8C%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</loc>
-    <lastmod>2016-09-02T14:51:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>排序专题(一)——选择排序与冒泡排序</title>
-        <pubTime>2016-07-18T06:22:45.000Z</pubTime>
-        
-        <tag>Algorithm</tag>
-         
-        <tag>Sort</tag>
-         
-         
-           
-             
-              <breadCrumb title="传统算法" url="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/"/>
-          
-             
-              <breadCrumb title="排序专题" url="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.depu.online/2016/09/02/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E4%BA%8C-%E2%80%94%E2%80%94%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F%E5%92%8C%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F/</loc>
-    <lastmod>2016-09-02T14:51:10.000Z</lastmod>
-    <data>
-        <display>
-        <title>排序专题(二)——插入排序和希尔排序</title>
-        <pubTime>2016-09-02T11:46:40.000Z</pubTime>
         
         <tag>Algorithm</tag>
          
