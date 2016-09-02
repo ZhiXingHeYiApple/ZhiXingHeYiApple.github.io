@@ -88,7 +88,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Algorithm," />
+  <meta name="keywords" content="Algorithm,Sort," />
 
 
 
@@ -106,16 +106,29 @@
 
 
 
-<meta name="description" content="看到这个标题，你肯定会很不屑！在真实世界中，你可能掌握了多门编程语言，如swfit，python，java，c++，javascript等等。直接用这些语言来写代码，实现逻辑不就行了嘛！伪代码感觉就没啥用武之地，平时也不怎么接触和使用。但是在IT企业求职或面试过程中，在短短的一二十分钟内，HR想要考察你的专业技能，肯定不可能给你提供真实的编程环境，让你编写代码。通常情况下，是给你纸和笔，让你用伪代">
+<meta name="description" content="排序专题(一)——选择排序和冒泡排序排序专题(二)——插入排序和希尔排序排序专题(三)——归并排序排序专题(四)——快速排序排序专题(三)——堆排序排序专题(三)——计数排序、桶排序和基数排序排序专题(七)——算法总结
+
+
+普卢塔克说，萨特斯为了告诉他的士兵坚忍和智慧比蛮力更重要的道理，把两匹马带到他们面前，然后让两个人拔光马的尾毛。一个人是魁梧的大力士，他用力地拔了又拔，但一点效果也没有；另一个">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何写伪代码">
-<meta property="og:url" content="http://www.depu.online/2016/07/19/如何写伪代码/index.html">
+<meta property="og:title" content="排序专题(二)——插入排序和希尔排序">
+<meta property="og:url" content="http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序/index.html">
 <meta property="og:site_name" content="ZhiXingHeYi">
-<meta property="og:description" content="看到这个标题，你肯定会很不屑！在真实世界中，你可能掌握了多门编程语言，如swfit，python，java，c++，javascript等等。直接用这些语言来写代码，实现逻辑不就行了嘛！伪代码感觉就没啥用武之地，平时也不怎么接触和使用。但是在IT企业求职或面试过程中，在短短的一二十分钟内，HR想要考察你的专业技能，肯定不可能给你提供真实的编程环境，让你编写代码。通常情况下，是给你纸和笔，让你用伪代">
-<meta property="og:updated_time" content="2016-07-19T09:39:35.000Z">
+<meta property="og:description" content="排序专题(一)——选择排序和冒泡排序排序专题(二)——插入排序和希尔排序排序专题(三)——归并排序排序专题(四)——快速排序排序专题(三)——堆排序排序专题(三)——计数排序、桶排序和基数排序排序专题(七)——算法总结
+
+
+普卢塔克说，萨特斯为了告诉他的士兵坚忍和智慧比蛮力更重要的道理，把两匹马带到他们面前，然后让两个人拔光马的尾毛。一个人是魁梧的大力士，他用力地拔了又拔，但一点效果也没有；另一个">
+<meta property="og:image" content="http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序/sort_algorithm02_1.jpg">
+<meta property="og:image" content="http://cricode.qiniudn.com/insert-sort.gif">
+<meta property="og:image" content="http://cricode.qiniudn.com/shellsort_anim.gif">
+<meta property="og:updated_time" content="2016-09-02T14:51:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何写伪代码">
-<meta name="twitter:description" content="看到这个标题，你肯定会很不屑！在真实世界中，你可能掌握了多门编程语言，如swfit，python，java，c++，javascript等等。直接用这些语言来写代码，实现逻辑不就行了嘛！伪代码感觉就没啥用武之地，平时也不怎么接触和使用。但是在IT企业求职或面试过程中，在短短的一二十分钟内，HR想要考察你的专业技能，肯定不可能给你提供真实的编程环境，让你编写代码。通常情况下，是给你纸和笔，让你用伪代">
+<meta name="twitter:title" content="排序专题(二)——插入排序和希尔排序">
+<meta name="twitter:description" content="排序专题(一)——选择排序和冒泡排序排序专题(二)——插入排序和希尔排序排序专题(三)——归并排序排序专题(四)——快速排序排序专题(三)——堆排序排序专题(三)——计数排序、桶排序和基数排序排序专题(七)——算法总结
+
+
+普卢塔克说，萨特斯为了告诉他的士兵坚忍和智慧比蛮力更重要的道理，把两匹马带到他们面前，然后让两个人拔光马的尾毛。一个人是魁梧的大力士，他用力地拔了又拔，但一点效果也没有；另一个">
+<meta name="twitter:image" content="http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序/sort_algorithm02_1.jpg">
 
 
 
@@ -136,9 +149,9 @@
 
 
 
-  <link rel="canonical" href="http://www.depu.online/2016/07/19/如何写伪代码/"/>
+  <link rel="canonical" href="http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序/"/>
 
-  <title> 如何写伪代码 | ZhiXingHeYi </title>
+  <title> 排序专题(二)——插入排序和希尔排序 | ZhiXingHeYi </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -278,7 +291,7 @@
             
             
               
-                如何写伪代码
+                排序专题(二)——插入排序和希尔排序
               
             
           </h1>
@@ -290,8 +303,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-19T16:57:19+08:00" content="2016-07-19">
-              2016-07-19
+            <time itemprop="dateCreated" datetime="2016-09-02T19:46:40+08:00" content="2016-09-02">
+              2016-09-02
             </time>
           </span>
 
@@ -311,6 +324,18 @@
 
                 
                 
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/传统算法/排序专题/" itemprop="url" rel="index">
+                    <span itemprop="name">排序专题</span>
+                  </a>
+                </span>
+
+                
+                
 
               
             </span>
@@ -320,8 +345,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/19/如何写伪代码/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/19/如何写伪代码/" itemprop="commentsCount"></span>
+                <a href="/2016/09/02/排序专题-二-——插入排序和希尔排序/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/02/排序专题-二-——插入排序和希尔排序/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -331,7 +356,7 @@
 
           
           
-             <span id="/2016/07/19/如何写伪代码/" class="leancloud_visitors" data-flag-title="如何写伪代码">
+             <span id="/2016/09/02/排序专题-二-——插入排序和希尔排序/" class="leancloud_visitors" data-flag-title="排序专题(二)——插入排序和希尔排序">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -353,18 +378,48 @@
       
 
       
-        <p>看到这个标题，你肯定会很不屑！在真实世界中，你可能掌握了多门编程语言，如swfit，python，java，c++，javascript等等。直接用这些语言来写代码，实现逻辑不就行了嘛！伪代码感觉就没啥用武之地，平时也不怎么接触和使用。但是在IT企业求职或面试过程中，在短短的一二十分钟内，HR想要考察你的专业技能，肯定不可能给你提供真实的编程环境，让你编写代码。通常情况下，是给你纸和笔，让你用伪代码来写出代码的逻辑。这个时候，你可能和我一样，就会有疑问了，具体的伪代码格式该怎么写？这个时候，你可以用你最擅长的一门编程语言的格式来写，但个人认为，除非特殊情况，否则最好用伪代码来写，一方面简洁明了，另一方面HR未必就懂你写的那个语言（通常HR也都是搞技术的，不会有太大问题）。所以最好还是了解一些伪代码的格式。<br>通常伪代码是介于自然语言和计算机编程语言之间的一种算法描述语言。其具有简洁明了易懂的特点。但具体的格式并没有非常严格的标准和规范。所以以下总结的伪代码格式，是参考个人认为比较权威的《算法导论》这本书。</p>
-<p>（1）赋值用箭头“←” 或”:=”<br><a id="more"></a></p>
-<p>（2）<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> i←<span class="number">0</span> to <span class="number">10</span>    <span class="comment">//for、while、if 后面的条件语句都不用加括号</span></div><div class="line">    <span class="keyword">do</span> XXXXX      <span class="comment">//for后面必定要紧跟缩进的do</span></div><div class="line">       XXXXX</div></pre></td></tr></table></figure></p>
-<p>（3）<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span> time&lt;<span class="number">10</span></div><div class="line">    <span class="keyword">do</span>  xxxxx    <span class="comment">//while后面必定要紧跟缩进的do</span></div><div class="line">        xxxxx</div></pre></td></tr></table></figure></p>
-<p>（4）<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> i=<span class="number">10</span></div><div class="line">    then xxxx</div><div class="line">    <span class="keyword">else</span> xxxx    <span class="comment">//else 和 then 要在对齐</span></div></pre></td></tr></table></figure></p>
-<p>（5）<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> i=<span class="number">10</span></div><div class="line">    then xxxx   <span class="comment">//if 后面必定跟上then，else后面不用跟then</span></div><div class="line">elseif i=<span class="number">9</span></div><div class="line">    then xxxx</div><div class="line">         yyyy</div><div class="line"><span class="keyword">else</span>  xxxx             <span class="comment">//else 跟在elseif 的 then 对齐</span></div><div class="line"></div><div class="line"><span class="comment">//也可以用如下方式:</span></div><div class="line"></div><div class="line">    <span class="keyword">if</span> i=<span class="number">10</span> Then&#123;</div><div class="line"></div><div class="line">        XXXXXX</div><div class="line"></div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line"></div><div class="line">        XXXXXX</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
-<p>（6）elseif 要合并。</p>
-<p>（7）<u>同一嵌套等级的语句要对齐</u>。</p>
-<p>（8）定义变量的语句不用写出来，但必须在注释中给出</p>
-<p>（9）函数的伪代码格式例子为：search（A，name）        <strong>//参数类型可以不给出，但必须在注释中说明</strong></p>
-<p>（10）写完的伪代码最后必须在每行伪代码前加上序号</p>
-<p>（10）对于常用的一些操作(不是该算法的核心部分),可以利用单词意思来描述就行了,如交换操作,可以使用swap XX and XX(或者exchange)。</p>
+        <p><strong><br><a href="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/#more"><font color="#FF6100">排序专题(一)——选择排序和冒泡排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-二-——堆排序/#more"><font color="#FF6100">排序专题(二)——插入排序和希尔排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-三-——归并排序/#more"><font color="#FF6100">排序专题(三)——归并排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-四-——快速排序/#more"><font color="#FF6100">排序专题(四)——快速排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-五-——堆排序/#more"><font color="#FF6100">排序专题(三)——堆排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序./#more"><font color="#FF6100">排序专题(三)——计数排序、桶排序和基数排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-七-——算法总结/#more"><font color="#FF6100">排序专题(七)——算法总结</font></a>
+</strong></p>
+<blockquote>
+<p><strong>普卢塔克说，萨特斯为了告诉他的士兵坚忍和智慧比蛮力更重要的道理，把两匹马带到他们面前，然后让两个人拔光马的尾毛。一个人是魁梧的大力士，他用力地拔了又拔，但一点效果也没有；另一个人是一个精美的、长相矫捷的裁缝，他微笑着，每次拔掉一根毛，很快就把尾巴拔得光秃秃的。!&emsp; &emsp;&emsp; &emsp;——科巴姆·布鲁尔</strong></p>
+</blockquote>
+<img src="/2016/09/02/排序专题-二-——插入排序和希尔排序/sort_algorithm02_1.jpg" alt="sort_algorithm02_1.jpg" title="">
+<h2 id="蛮力法"><a href="#蛮力法" class="headerlink" title="蛮力法"></a>蛮力法</h2><p>减治技术利用了一个问题给定实例的解和同样问题较小实例的解之间的某种关系。一旦建立这种关系,我们既可以从顶至下,也可以从底至上地来利用该关系。其中自顶向下会自然导致出递归算法,而自底向上版本往往是迭代实现(该方法又叫增量法)。<br>减治法主要表现为3种主要变化形式:</p>
+<ul>
+<li>减去一个常量</li>
+<li>减去一个常量因子</li>
+<li>减去可变的规模</li>
+</ul>
+<p>本节要讲述的直接插入排序和希尔排序,本质上都是”插入排序”。插入排序算法在一定程度上体现了减治技术在算法中的应用。</p>
+<hr>
+<h2 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h2><p><strong>特性</strong>：<font color="red">In-place sort</font>、<font color="red">stable sort</font>、<font color="red">适合于小数组排序</font><br><img class="alignnone" src="http://cricode.qiniudn.com/insert-sort.gif" alt="" width="300" height="180"><br>思考这样一个问题,假设当我们对较小数组A[0..n-2]排序的问题已经解决了,得到一个大小为n-1的有序数组: A[0]&lt;=…&lt;=A[n-2]。如何利用这个较小规模的解,并将元素A[n-1]考虑进来,来得到原问题的解呢?<br>很显然,就像我们平时玩扑克牌时对手里的扑克牌进行排序整理的方式相同,我们要做的就是在这些有序的元素中为A[n-1]找到一个合适的位置,然后把它插入到那里。一般来说,我们从左往右扫描这个有序的子数组,直到遇到第一个小于等于A[n-1]的元素,然后把A[n-1]插在该元素后面。这也是插入法名字的由来。</p>
+<figure class="highlight cpp"><figcaption><span>伪代码</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//非递归版本插入排序(自底向上)</span></div><div class="line">InsertionSort(A[<span class="number">0.</span>.n<span class="number">-1</span>])</div><div class="line">  <span class="comment">//功能：用插入排序对给定的数组进行排序</span></div><div class="line">  <span class="comment">//输入：一个可排序数组A[0..n-1]</span></div><div class="line">  <span class="comment">//输出：升序排列的数组A[0..n-1]</span></div><div class="line">  <span class="keyword">for</span> i&lt;- <span class="number">1</span> to n<span class="number">-1</span> <span class="keyword">do</span></div><div class="line">    key&lt;- A[i]</div><div class="line">    j&lt;- i<span class="number">-1</span></div><div class="line">    <span class="keyword">while</span> j&gt;=<span class="number">0</span> and key&lt;A[j] <span class="keyword">do</span></div><div class="line">      A[j+<span class="number">1</span>]&lt;- A[j];</div><div class="line">      j&lt;- j<span class="number">-1</span></div><div class="line">    A[j+<span class="number">1</span>]&lt;- key;</div></pre></td></tr></table></figure>
+<figure class="highlight"><figcaption><span>伪代码</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">//递归版本插入排序(自顶向下)</div><div class="line">Recursive_InsertionSort(A[0..n-1],p,q)</div><div class="line">  if p&lt;q then</div><div class="line">    Recursive_InsertionSort(A,p,q-1)   //递归将A[p..q-1]进行排序</div><div class="line">    Insert(A,p,q-1)</div><div class="line">    </div><div class="line">Insert(A[0..n-1],p,q)</div><div class="line">  key&lt;- A[q+1]</div><div class="line">  j&lt;- q</div><div class="line">  while j&gt;=0 and key&lt;A[j] do</div><div class="line">    A[j+1]&lt;- A[j]</div><div class="line">    j&lt;- j-1</div><div class="line">  A[j+1]&lt;- key</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><strong>算法复杂度</strong>：<br>时间复杂度<br>插入排序是基于比较操作的排序算法,所以算法分析时,该算法的基本操作是键值比较。<br>最优复杂度：当输入数组就是排好序的时候，需要n-1次比较操作,复杂度为<strong>$$O(n)$$</strong>，而快速排序在这种情况下会产生O(n^2)的复杂度。<br>最差复杂度：其实插入排序的复杂度和逆序对的个数一样，当数组倒序时，逆序对的个数为n(n-1)/2，因此插入排序最坏复杂度为<strong>$$O(n^2)$$</strong>。<br>平均复杂度: 对于随机序列的数组,插入排序的平均比较次数是降序数组的一半,也就是说需要约(n^2)/4次比较操作,复杂度为<strong>$$O(n^2)$$</strong><br>直接插入排序的平均性能比最差性能快一倍,以及遇到基本有序的数组时表现出的优异性能,使得插入排序领先于它在基本排序算法领域的主要竞争对手 —— 选择排序和冒泡排序。</p>
+<p>空间复杂度：<br>直接插入排序是一种内部排序(In-place sort),所以不需要额外的辅助空间，其空间复杂度为<strong>$$O(1)$$</strong></p>
+<hr>
+<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h2><p><strong>特性</strong>：<font color="red">In-place sort</font>、<font color="red">unstable sort</font>、<font color="red">适合于较大的数组排序</font><br><img class="aligncenter" src="http://cricode.qiniudn.com/shellsort_anim.gif" alt="" width="277" height="344"><br>希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。</p>
+<p>希尔排序是基于插入排序的以下两点性质而提出改进方法的：</p>
+<ul>
+<li>(1)插入排序在对几乎已经排好序的数据操作时， 效率高， 即可以达到线性排序的效率</li>
+<li>(2)但插入排序一般来说是低效的， 因为插入排序每次只能将数据移动一位</li>
+</ul>
+<p>希尔排序的基本思想是：先将整个待排序的记录序列<font color="red">分割成为若干子序列分别进行直接插入排序</font>，待整个序列中的记录“基本有序”时，再对全体记录进行依次直接插入排序。</p>
+<p>直接插入排序也适用于链式存储结构；<font color="red">希尔排序不适用于链式结构</font>。</p>
+<p>对于希尔排序来说，步长为<font color="red"> 1， 4， 13， 40， 121</font>的效率是最高的</p>
+<p><strong>算法步骤</strong>：</p>
+<p>1）选择一个增量序列t1，t2，…，tk，其中ti&gt;tj，tk=1；</p>
+<p>2）按增量序列个数k，对序列进行k 趟排序；   增量序列gap的取法必须满足：<font color="red"><em>最后一个步长必须是</em> 1</font></p>
+<p>3）每趟排序，根据对应的增量ti，将待排序列分割成若干长度为m 的子序列，分别对各子表进行直接插入排序。仅增量因子为1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。</p>
+<p><strong>算法复杂度</strong>：<br>时间复杂度：<br>希尔排序的算法时间性能依赖于特定的输入。最好的情况下,数组已经按照升序排列了,此时时间复杂度为<strong>$$O(n)$$</strong>，而当输入数组为一个严格递减的数组时,对其升序排序,达到最差时间复杂度为<strong>$$O(n^2)$$</strong>。除了这两种极端情况外,其它大部分数组排序的平均时间复杂度约为<strong>O(n^1.3)</strong><br>空间复杂度：<br>希尔排序是对直接插入排序的扩展可改进,也是一种内部排序(In-place sort),所以不需要额外的辅助空间，其空间复杂度为<strong>$$O(1)$$</strong></p>
+<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>减治法是一种一般性的算法设计技术,该方法有3种主要变化形式:(1)减一个常量(例如插入排序);(2)减一个常因子(例如二分查找);(3)减可变规模</li>
+<li>直接插入排序是减一技术在排序问题上的运用。无论在平均情况下还是在最差情况下,它都是一个O(n^2)的算法,但在平均情况下的效率大约要比最差情况快一倍。该算法很适合于小规模的且基本有序的数组。</li>
+<li>希尔排序是插入排序的扩展优化版本,适用于较大规模的数组,尽管其和插入排序一样都是内部排序,不需要额外的存储控件,但它却牺牲了稳定性。</li>
+</ul>
+<p><a href="https://github.com/ZhiXingHeYiApple/Sort_Topics/blob/master/SortTopics/" target="_blank" rel="external"><font color="#FF6100">查看插入排序和希尔排序的具体实现代码</font></a></p>
 
       
     </div>
@@ -410,6 +465,8 @@
           
             <a href="/tags/Algorithm/" rel="tag">#Algorithm</a>
           
+            <a href="/tags/Sort/" rel="tag">#Sort</a>
+          
         </div>
       
 
@@ -417,16 +474,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/18/排序专题-一-——选择排序和冒泡排序/" rel="next" title="排序专题(一)——选择排序与冒泡排序">
-                <i class="fa fa-chevron-left"></i> 排序专题(一)——选择排序与冒泡排序
+              <a href="/2016/07/19/如何写伪代码/" rel="next" title="如何写伪代码">
+                <i class="fa fa-chevron-left"></i> 如何写伪代码
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/09/02/排序专题-二-——插入排序和希尔排序/" rel="prev" title="排序专题(二)——插入排序和希尔排序">
-                排序专题(二)——插入排序和希尔排序 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/09/02/排序专题-三-——归并排序/" rel="prev" title="排序专题(三)——归并排序">
+                排序专题(三)——归并排序 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -442,10 +499,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/07/19/如何写伪代码/"
-     data-title="如何写伪代码"
+        <div class="ds-share flat" data-thread-key="2016/09/02/排序专题-二-——插入排序和希尔排序/"
+     data-title="排序专题(二)——插入排序和希尔排序"
      data-content=""
-     data-url="http://www.depu.online/2016/07/19/如何写伪代码/">
+     data-url="http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -475,8 +532,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/07/19/如何写伪代码/"
-           data-title="如何写伪代码" data-url="http://www.depu.online/2016/07/19/如何写伪代码/">
+      <div class="ds-thread" data-thread-key="2016/09/02/排序专题-二-——插入排序和希尔排序/"
+           data-title="排序专题(二)——插入排序和希尔排序" data-url="http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序/">
       </div>
     
   </div>
@@ -585,7 +642,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#蛮力法"><span class="nav-number">1.</span> <span class="nav-text">蛮力法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#直接插入排序"><span class="nav-number">2.</span> <span class="nav-text">直接插入排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#希尔排序"><span class="nav-number">3.</span> <span class="nav-text">希尔排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
           </div>
         </section>

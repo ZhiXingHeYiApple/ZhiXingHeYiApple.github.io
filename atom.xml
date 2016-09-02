@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.depu.online/"/>
-  <updated>2016-07-19T09:39:35.000Z</updated>
+  <updated>2016-09-02T14:56:45.000Z</updated>
   <id>http://www.depu.online/</id>
   
   <author>
@@ -14,6 +14,214 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>排序专题(七)——算法总结</title>
+    <link href="http://www.depu.online/2016/09/02/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E4%B8%83-%E2%80%94%E2%80%94%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+    <id>http://www.depu.online/2016/09/02/排序专题-七-——算法总结/</id>
+    <published>2016-09-02T11:55:21.000Z</published>
+    <updated>2016-09-02T14:56:45.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="传统算法" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="排序专题" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/"/>
+    
+    
+      <category term="Algorithm" scheme="http://www.depu.online/tags/Algorithm/"/>
+    
+      <category term="Sort" scheme="http://www.depu.online/tags/Sort/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序专题(六)——计数排序、桶排序和基数排序</title>
+    <link href="http://www.depu.online/2016/09/02/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E5%85%AD-%E2%80%94%E2%80%94%E8%AE%A1%E6%95%B0%E6%8E%92%E5%BA%8F%E3%80%81%E6%A1%B6%E6%8E%92%E5%BA%8F%E5%92%8C%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F/"/>
+    <id>http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序/</id>
+    <published>2016-09-02T11:53:51.000Z</published>
+    <updated>2016-09-02T14:56:45.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="传统算法" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="排序专题" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/"/>
+    
+    
+      <category term="Algorithm" scheme="http://www.depu.online/tags/Algorithm/"/>
+    
+      <category term="Sort" scheme="http://www.depu.online/tags/Sort/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序专题(五)——堆排序</title>
+    <link href="http://www.depu.online/2016/09/02/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E4%BA%94-%E2%80%94%E2%80%94%E5%A0%86%E6%8E%92%E5%BA%8F/"/>
+    <id>http://www.depu.online/2016/09/02/排序专题-五-——堆排序/</id>
+    <published>2016-09-02T11:50:46.000Z</published>
+    <updated>2016-09-02T14:57:40.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="传统算法" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="排序专题" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/"/>
+    
+    
+      <category term="Algorithm" scheme="http://www.depu.online/tags/Algorithm/"/>
+    
+      <category term="Sort" scheme="http://www.depu.online/tags/Sort/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序专题(四)——快速排序</title>
+    <link href="http://www.depu.online/2016/09/02/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E5%9B%9B-%E2%80%94%E2%80%94%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
+    <id>http://www.depu.online/2016/09/02/排序专题-四-——快速排序/</id>
+    <published>2016-09-02T11:50:26.000Z</published>
+    <updated>2016-09-02T14:57:54.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="传统算法" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="排序专题" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/"/>
+    
+    
+      <category term="Algorithm" scheme="http://www.depu.online/tags/Algorithm/"/>
+    
+      <category term="Sort" scheme="http://www.depu.online/tags/Sort/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序专题(三)——归并排序</title>
+    <link href="http://www.depu.online/2016/09/02/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E4%B8%89-%E2%80%94%E2%80%94%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
+    <id>http://www.depu.online/2016/09/02/排序专题-三-——归并排序/</id>
+    <published>2016-09-02T11:50:09.000Z</published>
+    <updated>2016-09-02T14:58:52.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(一)——选择排序和冒泡排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-二-——堆排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(二)——插入排序和希尔排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-三-——归并排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——归并排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-四-——快速排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(四)——快速排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-五-——堆排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——堆排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序./#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——计数排序、桶排序和基数排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-七-——算法总结/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(七)——算法总结&lt;/font&gt;&lt;/a&gt;
+&lt;/strong&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(一)——选择排序和冒泡排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;
+    
+    </summary>
+    
+      <category term="传统算法" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="排序专题" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/"/>
+    
+    
+      <category term="Algorithm" scheme="http://www.depu.online/tags/Algorithm/"/>
+    
+      <category term="Sort" scheme="http://www.depu.online/tags/Sort/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序专题(二)——插入排序和希尔排序</title>
+    <link href="http://www.depu.online/2016/09/02/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E4%BA%8C-%E2%80%94%E2%80%94%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F%E5%92%8C%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F/"/>
+    <id>http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序/</id>
+    <published>2016-09-02T11:46:40.000Z</published>
+    <updated>2016-09-02T14:51:10.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(一)——选择排序和冒泡排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-二-——堆排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(二)——插入排序和希尔排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-三-——归并排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——归并排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-四-——快速排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(四)——快速排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-五-——堆排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——堆排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序./#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——计数排序、桶排序和基数排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-七-——算法总结/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(七)——算法总结&lt;/font&gt;&lt;/a&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;普卢塔克说，萨特斯为了告诉他的士兵坚忍和智慧比蛮力更重要的道理，把两匹马带到他们面前，然后让两个人拔光马的尾毛。一个人是魁梧的大力士，他用力地拔了又拔，但一点效果也没有；另一个人是一个精美的、长相矫捷的裁缝，他微笑着，每次拔掉一根毛，很快就把尾巴拔得光秃秃的。!&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——科巴姆·布鲁尔&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&quot;/2016/09/02/排序专题-二-——插入排序和希尔排序/sort_algorithm02_1.jpg&quot; alt=&quot;sort_algorithm02_1.jpg&quot; title=&quot;&quot;&gt;
+&lt;h2 id=&quot;蛮力法&quot;&gt;&lt;a href=&quot;#蛮力法&quot; class=&quot;headerlink&quot; title=&quot;蛮力法&quot;&gt;&lt;/a&gt;蛮力法&lt;/h2&gt;&lt;p&gt;减治技术利用了一个问题给定实例的解和同样问题较小实例的解之间的某种关系。一旦建立这种关系,我们既可以从顶至下,也可以从底至上地来利用该关系。其中自顶向下会自然导致出递归算法,而自底向上版本往往是迭代实现(该方法又叫增量法)。&lt;br&gt;减治法主要表现为3种主要变化形式:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;减去一个常量&lt;/li&gt;
+&lt;li&gt;减去一个常量因子&lt;/li&gt;
+&lt;li&gt;减去可变的规模&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本节要讲述的直接插入排序和希尔排序,本质上都是”插入排序”。插入排序算法在一定程度上体现了减治技术在算法中的应用。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;直接插入排序&quot;&gt;&lt;a href=&quot;#直接插入排序&quot; class=&quot;headerlink&quot; title=&quot;直接插入排序&quot;&gt;&lt;/a&gt;直接插入排序&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;特性&lt;/strong&gt;：&lt;font color=&quot;red&quot;&gt;In-place sort&lt;/font&gt;、&lt;font color=&quot;red&quot;&gt;stable sort&lt;/font&gt;、&lt;font color=&quot;red&quot;&gt;适合于小数组排序&lt;/font&gt;&lt;br&gt;&lt;img class=&quot;alignnone&quot; src=&quot;http://cricode.qiniudn.com/insert-sort.gif&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;180&quot;&gt;&lt;br&gt;思考这样一个问题,假设当我们对较小数组A[0..n-2]排序的问题已经解决了,得到一个大小为n-1的有序数组: A[0]&amp;lt;=…&amp;lt;=A[n-2]。如何利用这个较小规模的解,并将元素A[n-1]考虑进来,来得到原问题的解呢?&lt;br&gt;很显然,就像我们平时玩扑克牌时对手里的扑克牌进行排序整理的方式相同,我们要做的就是在这些有序的元素中为A[n-1]找到一个合适的位置,然后把它插入到那里。一般来说,我们从左往右扫描这个有序的子数组,直到遇到第一个小于等于A[n-1]的元素,然后把A[n-1]插在该元素后面。这也是插入法名字的由来。&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;figcaption&gt;&lt;span&gt;伪代码&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//非递归版本插入排序(自底向上)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;InsertionSort(A[&lt;span class=&quot;number&quot;&gt;0.&lt;/span&gt;.n&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;])&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;//功能：用插入排序对给定的数组进行排序&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;//输入：一个可排序数组A[0..n-1]&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;//输出：升序排列的数组A[0..n-1]&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i&amp;lt;- &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; to n&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    key&amp;lt;- A[i]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    j&amp;lt;- i&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; j&amp;gt;=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; and key&amp;lt;A[j] &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      A[j+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]&amp;lt;- A[j];&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      j&amp;lt;- j&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    A[j+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]&amp;lt;- key;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;figcaption&gt;&lt;span&gt;伪代码&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;//递归版本插入排序(自顶向下)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Recursive_InsertionSort(A[0..n-1],p,q)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  if p&amp;lt;q then&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    Recursive_InsertionSort(A,p,q-1)   //递归将A[p..q-1]进行排序&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    Insert(A,p,q-1)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Insert(A[0..n-1],p,q)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  key&amp;lt;- A[q+1]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  j&amp;lt;- q&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  while j&amp;gt;=0 and key&amp;lt;A[j] do&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    A[j+1]&amp;lt;- A[j]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    j&amp;lt;- j-1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  A[j+1]&amp;lt;- key&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;strong&gt;算法复杂度&lt;/strong&gt;：&lt;br&gt;时间复杂度&lt;br&gt;插入排序是基于比较操作的排序算法,所以算法分析时,该算法的基本操作是键值比较。&lt;br&gt;最优复杂度：当输入数组就是排好序的时候，需要n-1次比较操作,复杂度为&lt;strong&gt;$$O(n)$$&lt;/strong&gt;，而快速排序在这种情况下会产生O(n^2)的复杂度。&lt;br&gt;最差复杂度：其实插入排序的复杂度和逆序对的个数一样，当数组倒序时，逆序对的个数为n(n-1)/2，因此插入排序最坏复杂度为&lt;strong&gt;$$O(n^2)$$&lt;/strong&gt;。&lt;br&gt;平均复杂度: 对于随机序列的数组,插入排序的平均比较次数是降序数组的一半,也就是说需要约(n^2)/4次比较操作,复杂度为&lt;strong&gt;$$O(n^2)$$&lt;/strong&gt;&lt;br&gt;直接插入排序的平均性能比最差性能快一倍,以及遇到基本有序的数组时表现出的优异性能,使得插入排序领先于它在基本排序算法领域的主要竞争对手 —— 选择排序和冒泡排序。&lt;/p&gt;
+&lt;p&gt;空间复杂度：&lt;br&gt;直接插入排序是一种内部排序(In-place sort),所以不需要额外的辅助空间，其空间复杂度为&lt;strong&gt;$$O(1)$$&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;希尔排序&quot;&gt;&lt;a href=&quot;#希尔排序&quot; class=&quot;headerlink&quot; title=&quot;希尔排序&quot;&gt;&lt;/a&gt;希尔排序&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;特性&lt;/strong&gt;：&lt;font color=&quot;red&quot;&gt;In-place sort&lt;/font&gt;、&lt;font color=&quot;red&quot;&gt;unstable sort&lt;/font&gt;、&lt;font color=&quot;red&quot;&gt;适合于较大的数组排序&lt;/font&gt;&lt;br&gt;&lt;img class=&quot;aligncenter&quot; src=&quot;http://cricode.qiniudn.com/shellsort_anim.gif&quot; alt=&quot;&quot; width=&quot;277&quot; height=&quot;344&quot;&gt;&lt;br&gt;希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。&lt;/p&gt;
+&lt;p&gt;希尔排序是基于插入排序的以下两点性质而提出改进方法的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)插入排序在对几乎已经排好序的数据操作时， 效率高， 即可以达到线性排序的效率&lt;/li&gt;
+&lt;li&gt;(2)但插入排序一般来说是低效的， 因为插入排序每次只能将数据移动一位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;希尔排序的基本思想是：先将整个待排序的记录序列&lt;font color=&quot;red&quot;&gt;分割成为若干子序列分别进行直接插入排序&lt;/font&gt;，待整个序列中的记录“基本有序”时，再对全体记录进行依次直接插入排序。&lt;/p&gt;
+&lt;p&gt;直接插入排序也适用于链式存储结构；&lt;font color=&quot;red&quot;&gt;希尔排序不适用于链式结构&lt;/font&gt;。&lt;/p&gt;
+&lt;p&gt;对于希尔排序来说，步长为&lt;font color=&quot;red&quot;&gt; 1， 4， 13， 40， 121&lt;/font&gt;的效率是最高的&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;算法步骤&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;1）选择一个增量序列t1，t2，…，tk，其中ti&amp;gt;tj，tk=1；&lt;/p&gt;
+&lt;p&gt;2）按增量序列个数k，对序列进行k 趟排序；   增量序列gap的取法必须满足：&lt;font color=&quot;red&quot;&gt;&lt;em&gt;最后一个步长必须是&lt;/em&gt; 1&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;3）每趟排序，根据对应的增量ti，将待排序列分割成若干长度为m 的子序列，分别对各子表进行直接插入排序。仅增量因子为1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;算法复杂度&lt;/strong&gt;：&lt;br&gt;时间复杂度：&lt;br&gt;希尔排序的算法时间性能依赖于特定的输入。最好的情况下,数组已经按照升序排列了,此时时间复杂度为&lt;strong&gt;$$O(n)$$&lt;/strong&gt;，而当输入数组为一个严格递减的数组时,对其升序排序,达到最差时间复杂度为&lt;strong&gt;$$O(n^2)$$&lt;/strong&gt;。除了这两种极端情况外,其它大部分数组排序的平均时间复杂度约为&lt;strong&gt;O(n^1.3)&lt;/strong&gt;&lt;br&gt;空间复杂度：&lt;br&gt;希尔排序是对直接插入排序的扩展可改进,也是一种内部排序(In-place sort),所以不需要额外的辅助空间，其空间复杂度为&lt;strong&gt;$$O(1)$$&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;减治法是一种一般性的算法设计技术,该方法有3种主要变化形式:(1)减一个常量(例如插入排序);(2)减一个常因子(例如二分查找);(3)减可变规模&lt;/li&gt;
+&lt;li&gt;直接插入排序是减一技术在排序问题上的运用。无论在平均情况下还是在最差情况下,它都是一个O(n^2)的算法,但在平均情况下的效率大约要比最差情况快一倍。该算法很适合于小规模的且基本有序的数组。&lt;/li&gt;
+&lt;li&gt;希尔排序是插入排序的扩展优化版本,适用于较大规模的数组,尽管其和插入排序一样都是内部排序,不需要额外的存储控件,但它却牺牲了稳定性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ZhiXingHeYiApple/Sort_Topics/blob/master/SortTopics/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;查看插入排序和希尔排序的具体实现代码&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(一)——选择排序和冒泡排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-二-——堆排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(二)——插入排序和希尔排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-三-——归并排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——归并排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-四-——快速排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(四)——快速排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-五-——堆排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——堆排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序./#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——计数排序、桶排序和基数排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-七-——算法总结/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(七)——算法总结&lt;/font&gt;&lt;/a&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;普卢塔克说，萨特斯为了告诉他的士兵坚忍和智慧比蛮力更重要的道理，把两匹马带到他们面前，然后让两个人拔光马的尾毛。一个人是魁梧的大力士，他用力地拔了又拔，但一点效果也没有；另一个人是一个精美的、长相矫捷的裁缝，他微笑着，每次拔掉一根毛，很快就把尾巴拔得光秃秃的。!&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——科巴姆·布鲁尔&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&quot;/2016/09/02/排序专题-二-——插入排序和希尔排序/sort_algorithm02_1.jpg&quot; alt=&quot;sort_algorithm02_1.jpg&quot; title=&quot;&quot;&gt;
+&lt;h2 id=&quot;蛮力法&quot;&gt;&lt;a href=&quot;#蛮力法&quot; class=&quot;headerlink&quot; title=&quot;蛮力法&quot;&gt;&lt;/a&gt;蛮力法&lt;/h2&gt;&lt;p&gt;减治技术利用了一个问题给定实例的解和同样问题较小实例的解之间的某种关系。一旦建立这种关系,我们既可以从顶至下,也可以从底至上地来利用该关系。其中自顶向下会自然导致出递归算法,而自底向上版本往往是迭代实现(该方法又叫增量法)。&lt;br&gt;减治法主要表现为3种主要变化形式:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;减去一个常量&lt;/li&gt;
+&lt;li&gt;减去一个常量因子&lt;/li&gt;
+&lt;li&gt;减去可变的规模&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本节要讲述的直接插入排序和希尔排序,本质上都是”插入排序”。插入排序算法在一定程度上体现了减治技术在算法中的应用。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;直接插入排序&quot;&gt;&lt;a href=&quot;#直接插入排序&quot; class=&quot;headerlink&quot; title=&quot;直接插入排序&quot;&gt;&lt;/a&gt;直接插入排序&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;特性&lt;/strong&gt;：&lt;font color=red&gt;In-place sort&lt;/font&gt;、&lt;font color=red&gt;stable sort&lt;/font&gt;、&lt;font color=red&gt;适合于小数组排序&lt;/font&gt;&lt;br&gt;&lt;img class=&quot;alignnone&quot; src=&quot;http://cricode.qiniudn.com/insert-sort.gif&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;180&quot;&gt;&lt;br&gt;思考这样一个问题,假设当我们对较小数组A[0..n-2]排序的问题已经解决了,得到一个大小为n-1的有序数组: A[0]&amp;lt;=…&amp;lt;=A[n-2]。如何利用这个较小规模的解,并将元素A[n-1]考虑进来,来得到原问题的解呢?&lt;br&gt;很显然,就像我们平时玩扑克牌时对手里的扑克牌进行排序整理的方式相同,我们要做的就是在这些有序的元素中为A[n-1]找到一个合适的位置,然后把它插入到那里。一般来说,我们从左往右扫描这个有序的子数组,直到遇到第一个小于等于A[n-1]的元素,然后把A[n-1]插在该元素后面。这也是插入法名字的由来。&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;figcaption&gt;&lt;span&gt;伪代码&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//非递归版本插入排序(自底向上)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;InsertionSort(A[&lt;span class=&quot;number&quot;&gt;0.&lt;/span&gt;.n&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;])&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;//功能：用插入排序对给定的数组进行排序&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;//输入：一个可排序数组A[0..n-1]&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;//输出：升序排列的数组A[0..n-1]&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i&amp;lt;- &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; to n&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    key&amp;lt;- A[i]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    j&amp;lt;- i&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; j&amp;gt;=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; and key&amp;lt;A[j] &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      A[j+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]&amp;lt;- A[j];&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      j&amp;lt;- j&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    A[j+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]&amp;lt;- key;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;figcaption&gt;&lt;span&gt;伪代码&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;//递归版本插入排序(自顶向下)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Recursive_InsertionSort(A[0..n-1],p,q)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  if p&amp;lt;q then&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    Recursive_InsertionSort(A,p,q-1)   //递归将A[p..q-1]进行排序&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    Insert(A,p,q-1)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Insert(A[0..n-1],p,q)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  key&amp;lt;- A[q+1]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  j&amp;lt;- q&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  while j&amp;gt;=0 and key&amp;lt;A[j] do&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    A[j+1]&amp;lt;- A[j]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    j&amp;lt;- j-1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  A[j+1]&amp;lt;- key&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="传统算法" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="排序专题" scheme="http://www.depu.online/categories/%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/"/>
+    
+    
+      <category term="Algorithm" scheme="http://www.depu.online/tags/Algorithm/"/>
+    
+      <category term="Sort" scheme="http://www.depu.online/tags/Sort/"/>
+    
+  </entry>
   
   <entry>
     <title>如何写伪代码</title>
@@ -55,9 +263,11 @@
     <link href="http://www.depu.online/2016/07/18/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98-%E4%B8%80-%E2%80%94%E2%80%94%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F%E5%92%8C%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
     <id>http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/</id>
     <published>2016-07-18T06:22:45.000Z</published>
-    <updated>2016-07-19T13:05:00.000Z</updated>
+    <updated>2016-09-02T14:51:53.000Z</updated>
     
-    <content type="html">&lt;blockquote&gt;
+    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(一)——选择排序和冒泡排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-二-——堆排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(二)——插入排序和希尔排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-三-——归并排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——归并排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-四-——快速排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(四)——快速排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-五-——堆排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——堆排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序./#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——计数排序、桶排序和基数排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-七-——算法总结/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(七)——算法总结&lt;/font&gt;&lt;/a&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;把事情做好,常常是浪费时间!&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——罗伯特·伯恩&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;剪不断，理还乱，是离愁，别是一番滋味在心头。&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——李清照&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -111,11 +321,14 @@
 &lt;li&gt;选择排序和冒泡排序，归结起来就6个字“循环，比较，交换”&lt;/li&gt;
 &lt;li&gt;选择排序和冒泡排序&lt;u&gt;都属于内部排序&lt;/u&gt;，无需额外存储空间；而&lt;u&gt;冒泡排序是稳定排序，选择排序是不稳定的&lt;/u&gt;。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ZhiXingHeYiApple/Sort_Topics/blob/master/SortTopics/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;查看冒泡和选择排序的具体实现代码&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(一)——选择排序和冒泡排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-二-——堆排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(二)——插入排序和希尔排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-三-——归并排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——归并排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-四-——快速排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(四)——快速排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-五-——堆排序/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——堆排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序./#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(三)——计数排序、桶排序和基数排序&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.depu.online/2016/09/02/排序专题-七-——算法总结/#more&quot;&gt;&lt;font color=&quot;#FF6100&quot;&gt;排序专题(七)——算法总结&lt;/font&gt;&lt;/a&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;把事情做好,常常是浪费时间!&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——罗伯特·伯恩&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;剪不断，理还乱，是离愁，别是一番滋味在心头。&amp;emsp; &amp;emsp;&amp;emsp; &amp;emsp;——李清照&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
