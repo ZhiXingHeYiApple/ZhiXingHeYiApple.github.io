@@ -654,6 +654,32 @@
           
             <p><strong><br><a href="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序"><font color="#FF6100">排序专题(一)——选择排序和冒泡排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序"><font color="#FF6100">排序专题(二)——插入排序和希尔排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-三-——归并排序"><font color="#FF6100">排序专题(三)——归并排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-四-——快速排序"><font color="#FF6100">排序专题(四)——快速排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-五-——堆排序"><font color="#FF6100">排序专题(三)——堆排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序"><font color="#FF6100">排序专题(三)——计数排序、桶排序和基数排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-七-——算法总结"><font color="#FF6100">排序专题(七)——算法总结</font></a>
 </strong></p>
+<blockquote>
+<p><strong>生活的秘密在于······用一个烦恼代替另一个烦恼。&emsp; &emsp;&emsp; &emsp;——查尔斯·M.舒尔茨</strong></p>
+</blockquote>
+<p>本节主要和大家讨论一下堆排序,尽管大家对于堆这种数据结构和它在排序上的应用已经非常熟悉,但是用变治策略的新眼光来观察堆排序,我们还是仍有所收获的。<br>变治法主要分为两个阶段工作的。首先,在”变”的截断,处于某种原因,把问题的实例变得容易求解,然后在”治”的阶段,对实例进行求解。根据对问题实例的变换方式,变治思想有3种主要类型:</p>
+<ul>
+<li>(1) 变换为同样问题的一个更简单或者更方便的实例——称之为<strong>实例化简</strong></li>
+<li>(2) 变换为同样实例的不同表现——称之为<strong>改变表现</strong></li>
+<li>(3) 变换为另一个问题的实例,这种问题的算法是已知的——称之为<strong>问题化简</strong></li>
+</ul>
+<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><p><strong>特性</strong>：<font color="red">In-place sort</font>、<font color="red">unstable sort</font></p>
+<p><img class="aligncenter size-full wp-image-51210" src="http://www.36dsj.com/wp-content/uploads/2016/05/300.gif" alt="堆排序" width="280" height="214" data-tag="bdshare" data-bd-imgshare-binded="1"></p>
+<p>堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。<br>﻿1.堆在内存中的表现形式是以数组的形式存储<br>2.堆是一个完全二叉树<br>建堆：建堆的过程就是一个反复筛选的过程<br>1.每次都插到数组的末端，形成一个完全二叉树；<br>2.从最后一个非终端节点开始，直到第一个节点为止（只和子节点比较）；<br>删除堆：<br>1.每次都是删除第一个；<br>2.然后最后一个数字补进来；<br>3.然后调整堆<br>调整堆：<br>1.每次都是与最小的儿子进行交换；<br>2.每次都是从倒数第一个非终端节点开始调整；</p>
+<p><strong>算法步骤</strong>：</p>
+<p>1）创建一个堆H[0..n-1]</p>
+<p>2）把堆首（最大值）和堆尾互换</p>
+<p>3）把堆的尺寸缩小1，并调用shift_down(0),目的是把新的数组顶端数据调整到相应位置</p>
+<p>4） 重复步骤2，直到堆的尺寸为1</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">1.下标计算[为与程序对应，下标从0开始]</div><div class="line">Parent(i):</div><div class="line">    return i/2</div><div class="line">Left(i):</div><div class="line">    return 2*i+1</div><div class="line">Right(i):</div><div class="line">    return 2*i+2</div><div class="line">2.使下标i元素为根的的子树成为最大堆</div><div class="line">MAX_HEAPIFY(A,i):</div><div class="line">l&lt;——Left(i)</div><div class="line">r&lt;——Right(i)</div><div class="line">if l&lt;length(A) and A[l]&gt;A[i]</div><div class="line">    then largest&lt;——l</div><div class="line">    else largest&lt;——i</div><div class="line">if r&lt;length(A) and A[r]&gt;A[largest]</div><div class="line">    then largest&lt;——r</div><div class="line">if largest != i</div><div class="line">    then exchange A[i] &lt;——&gt; A[largest]</div><div class="line">    MAX_HEAPIFY(A,largest)</div><div class="line">3.最大堆的建立,将数组A编译成一个最大堆</div><div class="line">BUILD_MAX_HEAP(A):</div><div class="line">    heapsize[A]&lt;——length[A]</div><div class="line">for i &lt;—— length[A]/2+1  to 0</div><div class="line">    MAX_HEAPIFY(A,i)</div><div class="line">4.堆排序</div><div class="line">HEAP_SORT(A):</div><div class="line">    BUILD_MAX_HEAP(A)</div><div class="line">    for i&lt;——length[A]-1 to 1</div><div class="line">        do exchange A[1] &lt;——&gt;  A[i]</div><div class="line">        length[A]&lt;—— length[A]-1</div><div class="line">        MAX_HEAPIFY(A,0)</div></pre></td></tr></table></figure>
+<p><strong>算法复杂度</strong>：<br>时间复杂度:<br>堆排序的时间，主要由<strong>建立初始堆</strong>和<strong>反复堆调整</strong>这两部分的时间开销构成，堆排序的时间复杂度不依赖于特定的输入,在任何情况下,时间复杂度为<strong>$$Ο(nlogn)$$</strong> 。<br>重新调整堆的时间复杂度为O(logN)，共N – 1次重新恢复堆操作，再加上前面建立堆时N / 2次向下调整，每次调整时间复杂度也为O(logN)，二者相加还是O(N <em> logN)。故堆排序的时间复杂度为O(N </em> logN)。<br>如果从底部最后的父节点开始建堆，那么我们可以大概算一下： 假如有N个节点，那么高度为H=logN，最后一层每个父节点最多只需要下调1次，倒数第二层最多只需要下调2次，顶点最多需要下调H次，而最后一层父节点共有2^(H-1)个,倒数第二层公有2^(H-2),顶点只有1(2^0)个，所以总共的时间复杂度为s = 1 <em> 2^(H-1) + 2 </em> 2^(H-2) + … + (H-1) <em> 2^1 + H </em> 2^0 将H代入后s= 2N - 2 - log2(N)，近似的最坏建堆时间复杂度就是O(N) 注意不是O(logN)，重新调整堆的时间复杂度才是O(logN)。重新进行保持堆特性为O(logN)，因此O(N)+O(NlogN)</p>
+<p>空间复杂度:</p>
+<h2 id="堆排序是一种内部排序-不需要额外的辅助空间-空间复杂度为-O-1"><a href="#堆排序是一种内部排序-不需要额外的辅助空间-空间复杂度为-O-1" class="headerlink" title="堆排序是一种内部排序,不需要额外的辅助空间,空间复杂度为$$O(1)$$"></a>堆排序是一种内部排序,不需要额外的辅助空间,空间复杂度为<strong>$$O(1)$$</strong></h2><p>堆排序非常适合于求解TOP K问题,如对于一个网络游戏,从海量用户中实时获取前十名分数最高的玩家。这个时候可以考虑堆排序，因为每次排序的结果就是找到当前堆中的最大/最小值。因此完成需求的时间复杂度为m*O(logN)。当我们需要找到常数级的最大/最小值时，往往堆排序是我们应该最先考虑的</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>归并排序是一种分治排序算法。在任何情况下,算法的时间复杂度都为O(NlogN),其键值比较次数非常接近于理论上的最小值(基于比较操作的排序算法的理论下界为O(NlogN))。</li>
+<li>归并排序的主要缺点是对于数组排序,需要相当大的额外存储空间,其显著优点在于稳定性。归并排序又称为多路合并排序,非常适合对存放在二级存储空间的文件进行排序。</li>
+</ul>
+<p><a href="https://github.com/ZhiXingHeYiApple/Sort_Topics/blob/master/SortTopics/" target="_blank" rel="external"><font color="#FF6100">查看堆排序的具体实现代码</font></a></p>
 
           
         
@@ -796,6 +822,12 @@
           
             <p><strong><br><a href="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序"><font color="#FF6100">排序专题(一)——选择排序和冒泡排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序"><font color="#FF6100">排序专题(二)——插入排序和希尔排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-三-——归并排序"><font color="#FF6100">排序专题(三)——归并排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-四-——快速排序"><font color="#FF6100">排序专题(四)——快速排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-五-——堆排序"><font color="#FF6100">排序专题(三)——堆排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序"><font color="#FF6100">排序专题(三)——计数排序、桶排序和基数排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-七-——算法总结"><font color="#FF6100">排序专题(七)——算法总结</font></a>
 </strong></p>
+<blockquote>
+<p><strong>缘夫天下之大，非一人之所能治，而分治之以群工。&emsp; &emsp;&emsp; &emsp;——黄宗羲</strong></p>
+<p><strong>一个人不论在祈祷什么，他总是祈祷着一个奇迹的降临。任何祷辞都不外是这样的意思：“伟大的上帝呵，请使二乘二不等于四吧。&emsp; &emsp;&emsp; &emsp;——伊万·屠格涅夫</strong></p>
+</blockquote>
+<p>上一节我们介绍了归并排序,本节我们将重点讲解以下快速排序。其也是采用分治策略的算法,但它不像归并排序那样是按照元素数组在数组中的位置对它进行划分,快速排序是按照元素的值对其进行划分操作的。快速排序通过划分操作使得基准元左侧的元素都小于等于它,而右侧的元素都大于等于它(基准元)。</p>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><p><strong>特性</strong>：<font color="red">Out-place sort</font>、<font color="red">Unstable sort</font><br><img class="aligncenter size-full wp-image-51209" src="http://www.36dsj.com/wp-content/uploads/2016/05/299.gif" alt="快速排序" width="280" height="214" data-tag="bdshare" data-bd-imgshare-binded="1"></p>
 
           
         
@@ -935,11 +967,40 @@
 
       
         
-          
-            <p><strong><br><a href="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序"><font color="#FF6100">排序专题(一)——选择排序和冒泡排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序"><font color="#FF6100">排序专题(二)——插入排序和希尔排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-三-——归并排序"><font color="#FF6100">排序专题(三)——归并排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-四-——快速排序"><font color="#FF6100">排序专题(四)——快速排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-五-——堆排序"><font color="#FF6100">排序专题(三)——堆排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序"><font color="#FF6100">排序专题(三)——计数排序、桶排序和基数排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-七-——算法总结"><font color="#FF6100">排序专题(七)——算法总结</font></a>
+          <p><strong><br><a href="http://www.depu.online/2016/07/18/排序专题-一-——选择排序和冒泡排序"><font color="#FF6100">排序专题(一)——选择排序和冒泡排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-二-——插入排序和希尔排序"><font color="#FF6100">排序专题(二)——插入排序和希尔排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-三-——归并排序"><font color="#FF6100">排序专题(三)——归并排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-四-——快速排序"><font color="#FF6100">排序专题(四)——快速排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-五-——堆排序"><font color="#FF6100">排序专题(三)——堆排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-六-——计数排序、桶排序和基数排序"><font color="#FF6100">排序专题(三)——计数排序、桶排序和基数排序</font></a><br><a href="http://www.depu.online/2016/09/02/排序专题-七-——算法总结"><font color="#FF6100">排序专题(七)——算法总结</font></a>
 </strong></p>
-
-          
+<blockquote>
+<p><strong>缘夫天下之大，非一人之所能治，而分治之以群工。&emsp; &emsp;&emsp; &emsp;——黄宗羲</strong></p>
+<p><strong>一个人不论在祈祷什么，他总是祈祷着一个奇迹的降临。任何祷辞都不外是这样的意思：“伟大的上帝呵，请使二乘二不等于四吧。。&emsp; &emsp;&emsp; &emsp;——伊万·屠格涅夫</strong></p>
+</blockquote>
+<p>分治法可能是最著名的通用算法设计技术了。很多非常有效的算法实际上就是这个通用算法的特殊实现。分治法是按照以下方案工作的:</p>
+<ul>
+<li>(1) 将一个问题划分成同一类型的若干个子问题,子问题最好规模相同。</li>
+<li>(2) 对这些子问题求解(通常采用递归方式,但当问题规模小到一定程度后,有时会利用另一算法)</li>
+<li>(3) 如果有必要的话,合并这些子问题的解,以得到原始问题的答案。</li>
+</ul>
+<p>本节要介绍的归并排序,就是成功应用分治策略的一个完美例子。对于一个需要排序的数组A[0..n-1],归并排序把它一分为二,得到两个子数组并对子数组递归排序,然后把这两个排好序的子数组合并为一个有序数组。</p>
+<hr>
+<h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><p><strong>特性</strong>：<font color=red>Out-place sort</font>，<font color=red>stable sort</font>。<br><img class="aligncenter size-full wp-image-51208" src="http://www.36dsj.com/wp-content/uploads/2016/05/298.gif" alt="归并排序" width="280" height="237" data-tag="bdshare" data-bd-imgshare-binded="1">
+﻿</p>
+<p><strong>算法思想</strong>：</p>
+<p>归并排序（Merge sort）是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。用分治策略解决问题分为三步：<font color=red><strong>分解、解决、合并</strong></font>。也即：将原问题划分成n个规模较小而结构与原问题相似的子问题； 递归地解决这些子问题，然后再合并其结果，得到原问题的解。此处n=2<br>基本思路就是将数组分成二组A，B，如果这二组组内的数据都是有序的，那么就可以很方便的将这二组数据进行排序。如何让这二组组内数据有序了？可以将A，B组各自再分成二组。依次类推，当分出来的小组只有一个数据时，可以认为这个小组组内已经达到了有序，然后再合并相邻的二个小组就可以了。这样通过先递归的分解数列，再合并数列就完成了归并排序。</p>
+<p><strong>算法步骤</strong>：</p>
+<ol>
+<li><p>申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列</p>
+</li>
+<li><p>设定两个指针，最初位置分别为两个已经排序序列的起始位置</p>
+</li>
+<li><p>比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置</p>
+</li>
+<li><p>重复步骤3直到某一指针达到序列尾</p>
+</li>
+<li><p>将另一序列剩下的所有元素直接复制到合并序列尾</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/09/02/排序专题-三-——归并排序/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
